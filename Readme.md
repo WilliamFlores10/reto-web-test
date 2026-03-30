@@ -48,6 +48,7 @@ Bash
 npm run test:ui
 
 Generar solo archivos BDD:
+
 Bash
 npm run bdd
 
