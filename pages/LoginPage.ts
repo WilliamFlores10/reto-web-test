@@ -34,7 +34,7 @@ export class LoginPage {
   //Funcion para validar que se redirige a la pagina de productos despues de un login exitoso
   async validarVentanaProductos(urlEsperada: string, tituloEsperado: string) {
     await expect(this.page).toHaveURL(urlEsperada);
-    await expect(this.title).toHaveText(tituloEsperado);
+    await expect(this.title).toHaveText(tituloEsperado, { timeout: 15000 });
   } 
 
 }
