@@ -1,5 +1,5 @@
 # 🚀 Reto de Automatización QA - Web (Playwright + Cucumber)
-Este proyecto contiene las pruebas automatizadas para la plataforma SauceDemo, desarrolladas con Playwright y Cucumber (playwright-bdd). La arquitectura sigue el patrón de diseño Page Object Model (POM) y utiliza TypeScript para garantizar un código robusto y tipado.
+Este proyecto contiene las pruebas automatizadas para la plataforma SauceDemo, desarrolladas con Playwright y Cucumber + Typescript (playwright-bdd). La arquitectura sigue el patrón de diseño Page Object Model (POM) y utiliza TypeScript para garantizar un código robusto y tipado.
 
 ## 🛠️ Tecnologías y Patrones
 * **Lenguaje:** TypeScript.
@@ -13,7 +13,7 @@ Asegúrate de tener instalado:
 
 * Node.js (v18 o superior).
 * Visual Studio Code (Recomendado).
-* Extensiones: Playwright Test y Cucumber (Gherkin) Full Support.
+* Extensiones: Playwright Test y Cucumber (Gherkin).
 
 ## Opcional 
 En caso de presentar un error de scripts deshabilitados
@@ -66,6 +66,9 @@ pages/: Clases Page Objects (LoginPage, ComprarPage).
 
 steps/: Definición de los pasos (Step Definitions) en TypeScript.
 
-test-results/: Carpeta con evidencias (fotos/videos) de ejecuciones.
+## 🛠️ Integracion con Github Actions
+Se tiene ejecucion por workflow y publicacion el GithubPages para visualizacion de casos de prueba.
+
+- https://williamflores10.github.io/reto-web-test/
 
 **Autor:** William Flores
