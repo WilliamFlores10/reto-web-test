@@ -4,8 +4,8 @@ Feature: Comprar un producto
 		Given que el usuario navega a la página de inicio
 	Scenario Outline: El usuario puede agregar un producto al carrito desde la página de productos
 		Given ingresa el usuario "<usuario>" y la contraseña "<password>"
-		And que el usuario agrega el producto "<producto>" al carrito
-		When el contador del carrito debe mostrar "<unidad>" unidad
+		When que el usuario agrega el producto "<producto>" al carrito
+		Then el contador del carrito debe mostrar "<unidad>" unidad
 		Examples:
 			| usuario       | password     | producto            | unidad |
 			| standard_user | secret_sauce | Sauce Labs Backpack | 1      |
@@ -28,7 +28,7 @@ Feature: Comprar un producto
 		Given ingresa el usuario "<usuario>" y la contraseña "<password>"
 		And que el usuario agrega el producto "<producto>" al carrito
 		When debería ser redirigido al "<url>" de "<titulo>" del carrito
-		When se encuentra en la pantalla de checkout de informacion del cliente
+		And se encuentra en la pantalla de checkout de informacion del cliente
 		And completa el formulario el nombre "<nombre>" , apellido "<apellido>" y codigo postal "<zipcode>"
 		Then deber ver un mensaje de confirmación "<mensajeFinal>"
 		Examples:
